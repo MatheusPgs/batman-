@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: none;
+    color: white;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: red;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#logo:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.title-contact {
+    width: 100%;
+    height: 80px;
+    margin-top: 0px;
+    background-color: #5555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.galeria-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria {
+    width: 95%;
+    height: 1280px;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 15px;   
+}
+
+.fotos {
+    background-color: #ffff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.fotos:hover {
+    transform: scale(1.02);
+}
+
+.foto1 {
+    background-image: url(https://rollingstone.uol.com.br/media/_versions/robert_pattinson_como_batman_foto_divulgacao_warner_widelg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.foto2 {
+    background-image: url(https://c.tenor.com/3JUsDUI0F8gAAAAC/c4tgothm.gif);
+    background-size: cover;
+    background-position: 50% 50%;    
+}
+
+.foto3 {
+    background-image: url(https://portalpopline.com.br/wp-content/uploads/2022/02/batman-pre-estreia.jpg?w=640);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.foto4 {
+    background-image: url(https://stories.adorocinema.com/batman-cena-deletada-revela-novo-coringa-de-barry-keoghan-que-surpreende-por-encarnacao-tenebrosa-de-vilao-confira/assets/10.gif);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.foto5 {
+    background-image: url(https://epipoca.com.br/wp-content/uploads/2022/03/cena-de-batman2-06032022.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.foto6 {
+    background-image: url(https://cdn.ome.lt/nQvL7VGZze-eWKVIIh4QSBhSKuM=/1200x630/smart/extras/conteudos/the-batman-tem-cena-pos-creditos.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.foto7 {
+    background-image: url(https://sm.ign.com/t/ign_br/feature/t/the-batman/the-batman-director-reveals-the-real-criminal-who-inspired-e_6s76.1200.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.foto8 {
+    background-image: url(https://i.pinimg.com/originals/58/cb/7b/58cb7b51f11517b9195185701153b494.gif);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.foto9 {
+    background-image: url(https://64.media.tumblr.com/128714d32c7828cbeb0af1ed7ea211c9/20ab390d0502a55c-c1/s540x810/cf471b59d64fdbd079c2f5969047347c49297165.gif);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #ffff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
